@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour & Travel Bootstrap Template</title>
+
+    <!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/plugins/css/plugins.css">	
+    
+    <!-- Custom style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet"><link id="jssDefault" rel="stylesheet" href="assets/css/skins/default.css">
+    
+	</head>
+	
+	<body class="theme-bg log-screen" style="background-image:url(assets/img/banner-log.png);">
+	
+		<section class="log-wrapper">
+			<div class="container">
+				<div class="col-md-6 col-md-push-6">
+					<h3 class="log-title">Corporate LogIn</h3>
+					<form class="form">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<label for="inputEmail">Full Name</label>
+									<input type="name" class="form-control" id="inputEmail" placeholder="Full Name" required>
+								</div>
+								
+								<div class="col-md-6 col-sm-6">
+									<label for="inputEmail">Email</label>
+									<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<label for="inputEmail">User Name</label>
+									<input type="text" class="form-control" id="inputEmail" placeholder="User Name" required>
+								</div>
+								
+								<div class="col-md-6 col-sm-6">
+									<label for="inputEmail">Password</label>
+									<input type="password" class="form-control" id="inputEmail" placeholder="*******" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<button type="submit" class="btn btn-dark">SignUp</button>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<p>Already Have Account? <a href="#">LogIn Here</a></p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	
+		
+<!-- Switcher -->
+		<button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="spin theme-cl fa fa-cog" aria-hidden="true"></i></button>
+		<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+		  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large theme-bg">Close &times;</button>
+		   <ul id="styleOptions" title="switch styling">
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-default" data-theme="skins/default"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-red" data-theme="skins/red"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-green" data-theme="skins/green"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-blue" data-theme="skins/blue"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-pink" data-theme="skins/pink"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-purple" data-theme="skins/purple"></a>
+				</li>
+			</ul>
+		</div>
+		<!-- /Switcher -->
+		 
+		<!-- =================== START JAVASCRIPT ================== -->
+		<script src="assets/plugins/js/jquery.min.js"></script>
+		<script src="assets/plugins/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/js/viewportchecker.js"></script>
+		<script src="assets/plugins/js/bootsnav.js"></script>
+		<script src="assets/plugins/js/slick.min.js"></script>
+		<script src="assets/plugins/js/jquery.nice-select.min.js"></script>
+		<script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+		<script src="assets/plugins/js/jquery.downCount.js"></script>
+		<script src="assets/plugins/js/freshslider.1.0.0.js"></script>
+		<script src="assets/plugins/js/moment.min.js"></script>
+		<script src="assets/plugins/js/daterangepicker.js"></script>
+		<script src="assets/plugins/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/js/bootstrap-wysihtml5.js"></script>
+		
+		<!-- Dashboard Js -->
+		<script src="assets/plugins/js/jquery.slimscroll.min.js"></script>
+		<script src="assets/plugins/js/jquery.metisMenu.js"></script>
+		<script src="assets/plugins/js/jquery.easing.min.js"></script>
+		<script src="assets/js/jQuery.style.switcher.js"></script>
+		<script>
+			function openRightMenu() {
+				document.getElementById("rightMenu").style.display = "block";
+			}
+			function closeRightMenu() {
+				document.getElementById("rightMenu").style.display = "none";
+			}
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#styleOptions').styleSwitcher();
+			});
+		</script>
+	
+    </body>
+
+</html>

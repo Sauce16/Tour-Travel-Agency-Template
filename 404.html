@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour & Travel Bootstrap Template </title>
+
+    <!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/plugins/css/plugins.css">	
+    
+    <!-- Custom style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet"><link id="jssDefault" rel="stylesheet" href="assets/css/skins/default.css">
+    
+	</head>
+	
+	<body>
+		
+		<!-- ======================= 404 ===================== -->
+		<section>
+			<div class="container">
+				<div class="error-page padd-top-30 padd-bot-30">
+					<h1 class="mrg-top-15 mrg-bot-0 theme-cl font-250 font-bold">404</h1>
+					<h2 class="mrg-top-10 mrg-bot-5 funky-font font-60">You Missed</h2>
+					<p>The page you are looking for doesn't exist </p>
+					<a href="index-2.html" class="btn theme-btn mrg-top-20">Go To Home Page</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================= End 404 ===================== -->
+		
+		<!-- Switcher -->
+		<button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="spin theme-cl fa fa-cog" aria-hidden="true"></i></button>
+		<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+		  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large theme-bg">Close &times;</button>
+		   <ul id="styleOptions" title="switch styling">
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-default" data-theme="skins/default"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-red" data-theme="skins/red"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-green" data-theme="skins/green"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-blue" data-theme="skins/blue"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-pink" data-theme="skins/pink"></a>
+				</li>
+				<li>
+					<a href="javascript: void(0)" class="cl-box cl-purple" data-theme="skins/purple"></a>
+				</li>
+			</ul>
+		</div>
+		<!-- /Switcher -->
+		 
+		<!-- =================== START JAVASCRIPT ================== -->
+		<script src="assets/plugins/js/jquery.min.js"></script>
+		<script src="assets/plugins/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/js/viewportchecker.js"></script>
+		<script src="assets/plugins/js/bootsnav.js"></script>
+		<script src="assets/plugins/js/slick.min.js"></script>
+		<script src="assets/plugins/js/jquery.nice-select.min.js"></script>
+		<script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+		<script src="assets/plugins/js/jquery.downCount.js"></script>
+		<script src="assets/plugins/js/freshslider.1.0.0.js"></script>
+		<script src="assets/plugins/js/moment.min.js"></script>
+		<script src="assets/plugins/js/daterangepicker.js"></script>
+		<script src="assets/plugins/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/js/bootstrap-wysihtml5.js"></script>
+		
+		<!-- Dashboard Js -->
+		<script src="assets/plugins/js/jquery.slimscroll.min.js"></script>
+		<script src="assets/plugins/js/jquery.metisMenu.js"></script>
+		<script src="assets/plugins/js/jquery.easing.min.js"></script>
+ 
+		<!-- Custom Js -->
+		<script src="assets/js/custom.js"></script>
+		
+		<script src="assets/js/jQuery.style.switcher.js"></script>
+		<script>
+			function openRightMenu() {
+				document.getElementById("rightMenu").style.display = "block";
+			}
+			function closeRightMenu() {
+				document.getElementById("rightMenu").style.display = "none";
+			}
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#styleOptions').styleSwitcher();
+			});
+		</script>
+	
+    </body>
+
+</html>
